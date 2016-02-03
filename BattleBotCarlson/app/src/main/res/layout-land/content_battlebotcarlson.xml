@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_battlebotcarlson" tools:context=".battlebotcarlson">
+
+    <TextView android:text="" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"/>
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/ldu"
+        android:layout_below="@+id/message"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/up"
+        android:layout_below="@+id/message"
+        android:layout_toEndOf="@+id/ldu" />
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/rdu"
+        android:layout_alignTop="@+id/up"
+        android:layout_toEndOf="@+id/up" />
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/left"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/ldu"/>
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/right"
+        android:layout_below="@id/rdu"
+        android:layout_alignStart="@id/rdu"/>
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/ldd"
+        android:layout_below="@id/left"
+        android:layout_alignParentStart="true"/>
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/down"
+        android:layout_toRightOf="@id/ldd"
+        android:layout_below="@id/left"/>
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/rdd"
+        android:layout_below="@id/right"
+        android:layout_toRightOf="@id/down"/>
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/frdu"
+        android:layout_above="@+id/right"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/fup"
+        android:layout_toLeftOf="@id/frdu"
+        android:layout_alignTop="@id/frdu"/>
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/fldu"
+        android:layout_toLeftOf="@id/fup"
+        android:layout_alignTop="@id/fup"/>
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/fright"
+        android:layout_below="@id/frdu"
+        android:layout_alignEnd="@id/frdu"
+        />
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/fleft"
+        android:layout_below="@id/fldu"
+        android:layout_alignEnd="@id/fldu"/>
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/frdd"
+        android:layout_below="@id/fright"
+        android:layout_alignEnd="@id/fright"/>
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/fdown"
+        android:layout_below="@id/fleft"
+        android:layout_toLeftOf="@id/frdd"/>
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/fldd"
+        android:layout_below="@+id/fleft"
+        android:layout_toLeftOf="@id/fdown"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kobayashi\nmaru"
+        android:id="@+id/ai"
+        android:layout_above="@+id/right"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan"
+        android:id="@+id/scan"
+        android:layout_above="@+id/fldd"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:text="STOP"
+        android:id="@+id/stop"
+        android:layout_below="@+id/frdu"
+        android:layout_alignStart="@+id/fup"
+        android:layout_alignEnd="@id/fup"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>
